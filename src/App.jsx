@@ -10,7 +10,7 @@ function App() {
     const fetchData = async () => {
       try {
         // Ensure this matches your FastAPI port
-        const response = await axios.get('http://localhost:8000/api/telemetry'); 
+        const response = await axios.get('/api/telemetry'); 
         setData(response.data);
 
         // Scan for the False Data Injection Attack
